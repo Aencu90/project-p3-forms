@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular Zwischenziel</title>
+    <link rel="stylesheet" type="text/css" href="style_form.css" />
+    <menu>
+      <a href="./index.html">Home</a>
+      <a href="./projekte.html">Projekte</a>
+    </menu>
+    <!-- dont forget the link to the css file -->
+    <!-- dont forget the meta tag for responsiveness -->
+  </head>
+
+
+  <body>
+    <form action="https://httpbin.org/anything" method="post">
+      <h2>Kontaktformular</h2>
+      <p>
+        Haben Sie ein leerstehendes Hotel, Restaurant oder eine leerstehende
+        Barlokalität? Fragen Sie sich, ob sich dort Zwischennutzungen
+        realisieren lassen? Füllen Sie das Formular aus und kontaktieren Sie
+        uns. Wir werden Ihre Angaben prüfen und auf Sie zukommen.
+      </p>
+      <fieldset>
+        <label>
+          Art der Lokalität
+          <select name="Art">
+            <option value="Hotel">Hotel</option>
+            <option value="Rest">Restaurant</option>
+            <option value="Bar">Bar</option>
+            <option value="Other">Anderes</option>
+          </select>
+        </label>
+        <label>
+          Seit wann ist es unbenutzt?
+          <input type="text" name="ZeitraumLeerstand" />
+        </label>
+
+        <label class="bordernone"> Hast du bereits versucht, die Immobilie zu verkaufen? </label>
+        <div class="immoverkauf">
+          <input type="radio" id="Ja" name="verkauf" value="Ja" />
+          <label class="bordernone" for="Ja">Ja</label>
+          <input type="radio" id="Nein" name="verkauf" value="Nein" />
+          <label class="bordernone" for="Nein">Nein</label>
+        </div>
+      </br>
+      </br>
+
+        <label>
+          <span class="person"> Vorname </span>
+          <input type="text" name="vorname" required />
+        </label>
+        <label>
+          <span class="person"> Nachname </span>
+          <input type="text" name="nachname" required />
+        </label>
+        <label>
+          <span class="person"> E-Mail </span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span class="person"> Telefon </span>
+          <input type="telefon" name="telefon" />
+        </label>
+        <label class="bordernone"> Wie hast du von uns erfahren? </label>
+        <span class="kanal">
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="option1"
+              name="option1"
+              value="mundzumund"
+            />
+            <label class="bordernone" for="option1">
+              Mund zu Mund Propaganda</label
+            >
+            <br />
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="option2"
+              name="option2"
+              value="scocialmedia"
+            />
+            <label class="bordernone" for="option2"> Social Media</label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="option3"
+              name="option3"
+              value="webseite_google"
+            />
+            <label class="bordernone" for="option3"> Webseite / Google</label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="option4"
+              name="option4"
+              value="anderes"
+            />
+
+            <label class="bordernone" for="option4"> Anderes</label>
+          </div>
+        </span>
+      </br>
+        <label class="bordernone">
+          Bitte gib ein selber gewähltes Passwort ein. Mit dem PW und deiner
+          Mailadresse kannst du dich später einloggen, um die Profile von den
+          Personen zu sehen, die in deiner Region auf der Suche nach Immobilien
+          sind für ihre Zwischennutzungsprojekte.
+        </label>
+        <label class="bordernone" for="pass"
+          >Passwort (minimum 8 Zeichen):</label
+        >
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          required
+        />
+      </fieldset>
+      <button type="submit">Abschicken</button>
+    </form>
+  </body>
+  <script>
+    const hamburgerButton = 
+    document.querySelector ()
+  </script>
+</html>

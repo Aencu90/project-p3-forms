@@ -1,9 +1,209 @@
-/* 
-If you can see a peach background, the css file is correctly linked. 
-Feel free to change or remove this styling! 
-We want you focus A LOT on the styling for this project. 
+/* Here in the css file you'll write your styling. make sure to link the css file to the html file. If it's linked correctly you should see a light blue background. */
+/*
+  1. Use a more-intuitive box-sizing model.
 */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
 body {
-  background-color: peachpuff;
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(70, 69, 69);
+  margin: 0;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: rgb(70, 69, 69);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(70, 69, 69);
+  text-align: center;
+}
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+menu a {
+  display: inline-block;
+  padding: 10px 10px;
+  background: white;
+  color: #260c1a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+menu a:hover {
+  background: #f05d23;
+  color: white;
+}
+.button {
+  background-color: #c5d86d;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 40px 40px 40px 40px;
+  font-size: 20px;
+  color: rgb(70, 69, 69);
+  margin: 10px 10px;
+  width: 15%;
+}
+.button:hover {
+  background-color: #c5d86d;
+  color: white;
+}
+.kontaktbox {
+  background-color: grey;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.hero {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+.gleitschirmbild {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+.sitzbankbild {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+.kontaktbilder {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  padding-left: 10px;
+}
+.mailbild {
+  display: block;
+  padding-right: 5px;
+}
+.facebook-image {
+  display: block;
+  padding-left: 5px;
+  width: 80%;
+}
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger .hamburger-lines {
+  background-color: rgb(218, 33, 33);
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+/***MEDIA QUERIES***/
+@media (max-width: 667px) {
+  h2 {
+    color: #260c1a;
+  }
+  .button {
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 20%;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) h2 {
+  color: #f05d23;
+}
+
+.button {
+  padding-left: 0, auto;
+  width: 20%;
 }
