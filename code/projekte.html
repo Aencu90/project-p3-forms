@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekte_zwischenziel</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <div class="hamburger">
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+    </div>
     <menu>
       <a href="./index.html">Home</a>
       <a href="./index_form.html">Kontaktiere uns</a>
     </menu>
+    <nav>
+      <a href="./index.html" target="_blank" rel="noopener noreferrer">Home</a>
+      <a href="./index_form.html">Kontaktiere uns</a>
+    </nav>
     <img class="hero" src="../images/Zwischenziel.png" alt="Zwischenziel" />
   </head>
   <body>
@@ -30,5 +39,11 @@
     >
       skikeller
     </a>
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger");
+      hamburgerButton.addEventListener("click", function () {
+        document.documentElement.classList.toggle("mobile-menu-open");
+      });
+    </script>
   </body>
 </html>

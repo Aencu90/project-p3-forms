@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formular Zwischenziel</title>
     <link rel="stylesheet" type="text/css" href="style_form.css" />
+    <div class="hamburger">
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+    </div>
     <menu>
       <a href="./index.html">Home</a>
       <a href="./projekte.html">Projekte</a>
     </menu>
+    <nav>
+      <a href="./projekte.html" target="_blank" rel="noopener noreferrer"
+        >Projekte</a
+      >
+      <a href="./index.html">Home</a>
+    </nav>
     <!-- dont forget the link to the css file -->
     <!-- dont forget the meta tag for responsiveness -->
   </head>
@@ -128,8 +139,10 @@
       <button type="submit">Abschicken</button>
     </form>
   </body>
-  <script>
-    const hamburgerButton = 
-    document.querySelector ()
-  </script>
+   <script>
+      const hamburgerButton = document.querySelector(".hamburger");
+      hamburgerButton.addEventListener("click", function () {
+        document.documentElement.classList.toggle("mobile-menu-open");
+      });
+    </script>
 </html>
